@@ -35,9 +35,9 @@ const start = async () => {
   } catch (err) {
     console.error(err);
   }
-
-  app.listen(3000, () => {
-    console.log('Listening on port 3000!!!!!!!!');
+  const port = 4000;
+  app.listen(port, () => {
+    console.log(`Le serveur est en cours d'exécution sur le port ${port}`);
   });
 };
 
